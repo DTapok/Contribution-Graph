@@ -4,13 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Contribution Graph</title>
 </head>
 
 <body>
 
+    <div class="container">
 
+        <div class="graph">
+            <div class="graph__title">
+            </div>
+            <div class="graph__main">
+                <div class="graph__main_week">
+                    <p>Пн</p>
+                    <p></p>
+                    <p>Ср</p>
+                    <p></p>
+                    <p>Пт</p>
+                </div>
+                <div class="graph__main_contributions"></div>
+            </div>
+        </div>
+
+        <div class="specification">
+            <p>Меньше</p>
+            <div class="absent contribution" data-title="No contributions"></div>
+            <div class="to_nine contribution" data-title="1-9 contributions"></div>
+            <div class="to_nineteen contribution" data-title="10-19 contributions"></div>
+            <div class="to_twenty_nine contribution" data-title="20-29 contributions"></div>
+            <div class="many contribution" data-title="30+ contributions"></div>
+            <p>Больше</p>
+        </div>
+    </div>
 
     <script src="dist/bundle.js"></script>
 </body>
